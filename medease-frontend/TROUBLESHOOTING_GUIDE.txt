@@ -1,0 +1,88 @@
+STEP-BY-STEP TROUBLESHOOTING GUIDE
+==================================
+
+WHITE SCREEN ISSUE - SOLUTIONS
+==============================
+
+PROBLEM: White screen when running npm run dev
+CAUSE: Usually JavaScript errors or routing issues
+
+SOLUTION 1: SIMPLE TEST (RECOMMENDED)
+=====================================
+1. Stop the current dev server (Ctrl+C)
+2. Rename App.jsx to App-complex.jsx
+3. Rename App-simple.jsx to App.jsx
+4. Run: npm run dev
+5. Open http://localhost:5173/test
+
+This will show a simple test page to verify everything works.
+
+SOLUTION 2: CHECK BROWSER CONSOLE
+=================================
+1. Open browser developer tools (F12)
+2. Go to Console tab
+3. Look for red error messages
+4. Take a screenshot of any errors
+
+SOLUTION 3: CHECK NETWORK TAB
+=============================
+1. Open browser developer tools (F12)
+2. Go to Network tab
+3. Refresh the page
+4. Look for failed requests (red entries)
+
+SOLUTION 4: VERIFY DEPENDENCIES
+===============================
+Run these commands:
+npm install
+npm run dev
+
+SOLUTION 5: CLEAR CACHE
+======================
+1. Stop dev server
+2. Delete node_modules folder
+3. Run: npm install
+4. Run: npm run dev
+
+STEP-BY-STEP RUNNING INSTRUCTIONS:
+==================================
+
+1. OPEN TERMINAL/POWERSHELL
+   - Navigate to: G:\TarunProject\medease-frontend
+
+2. INSTALL DEPENDENCIES
+   npm install
+
+3. START DEVELOPMENT SERVER
+   npm run dev
+
+4. OPEN BROWSER
+   - Go to: http://localhost:5173/test
+   - You should see: "MEDEASE Frontend is Working!"
+
+5. IF STILL WHITE SCREEN:
+   - Press F12 to open developer tools
+   - Check Console tab for errors
+   - Check Network tab for failed requests
+
+WHAT TO EXPECT:
+===============
+✅ Terminal shows: "Local: http://localhost:5173/"
+✅ Browser shows test page with "MEDEASE Frontend is Working!"
+✅ No errors in browser console
+
+COMMON ERRORS AND FIXES:
+========================
+- "Module not found" → Run npm install
+- "Port already in use" → Change port or kill process
+- "Permission denied" → Run as administrator
+- "Cannot resolve module" → Check file paths
+
+NEXT STEPS AFTER FRONTEND WORKS:
+================================
+1. Test the simple version first
+2. Once working, switch back to full App.jsx
+3. Set up backend (after installing Maven)
+4. Connect frontend to backend
+
+Let me know what you see in the browser console!
